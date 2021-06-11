@@ -1,0 +1,109 @@
+// Here you can add other styles
+
+.body_blocked {
+  overflow: hidden;
+}
+
+li.c-sidebar-nav-item:nth-last-of-type(2) > .c-sidebar-nav-link,
+li.c-sidebar-nav-item:nth-last-of-type(3) > .c-sidebar-nav-link,
+li.c-sidebar-nav-item:nth-last-of-type(4) > .c-sidebar-nav-link,
+li.c-sidebar-nav-item:nth-last-of-type(5) > .c-sidebar-nav-link {
+  display: block;
+  padding-left: 56px !important;
+}
+
+.langChoose {
+  display: flex;
+  align-items: baseline;
+  margin: 0 -10px;
+  font-weight: bold;
+  padding: 20px;
+  padding-right: 32px;
+
+  span {
+    margin: 0 10px;
+    cursor: pointer;
+
+    &.active {
+      color: orange;
+    }
+  }
+}
+
+.addChartBtn {
+  color: #fff;
+  background-color: #321fdb;
+  padding: 10px;
+  font-size: 1rem;
+}
+
+.grid {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.grid > div {
+  flex: 1 0 100%;
+  overflow: hidden;
+
+  @media (min-width: 768px) {
+    flex: 1 0 50%;
+  }
+
+  @media (min-width: 992px) {
+    flex: 1 0 33.333%;
+  }
+}
+
+canvas {
+  height: 245px !important;
+}
+
+.chartTitle {
+  width: 100%;
+  border: none;
+  font-size: 1rem;
+
+  &:focus {
+    outline: none;
+  }
+}
+
+.cloudDownloadBtnGroup {
+  display: flex !important;
+  flex-direction: column !important;
+  align-items: flex-end !important;
+}
+
+.btn {
+  padding: 3px 6px !important;
+}
+
+.chartTypeSelect {
+  width: 99%;
+  font-size: 0.8rem;
+  margin-top: 10px;
+}
+
+.itemTitle {
+  width: 100%;
+  border: none;
+  font-size: 0.9rem;
+
+  &:focus {
+    outline: none;
+  }
+}
+
+@media (max-width: 576px) {
+  .formTitle {
+    font-size: 1.8rem;
+  }
+}
+
+.uploadContent {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 3rem;
+}
